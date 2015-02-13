@@ -4,12 +4,12 @@
 //feb 13 2015
 
 
-var array= [];
+var array= [1,2,3,4,5,6,7,8,9,10];
 
 	//fills out the array
-	for(var i = 1; i <+ 10; i++){
-		array[i-1] = i; //starts at zero but fills 1-10;
-	}
+//	for(var i = 1; i <+ 10; i++){
+//		array[i-1] = i; //starts at zero but fills 1-10;
+//	}
 
 
 function printeveryother(array){
@@ -20,7 +20,8 @@ function printeveryother(array){
 }
 
 function increasegap(array){
-	for(var i = 1; i <array.length; i+=i){
+gap = 2;
+	for(var i = 0; i < array.length; i+= gap, gap++){
 		console.log(array[i]);
 	//	i++;
 
